@@ -1,3 +1,15 @@
+### Ingredients index
+GET http://localhost:3000/ingredients.json
+
+### Ingredients create
+POST http://localhost:3000/ingredients.json
+Content-Type: application/json
+
+{
+  "name": "potatoes",
+  "image_url": "potatoes.jpg"
+}
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
