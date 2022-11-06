@@ -10,6 +10,19 @@ Content-Type: application/json
   "image_url": "potatoes.jpg"
 }
 
+### PantryItems index
+GET http://localhost:3000/pantry_items.json
+
+### PantryItems create
+POST http://localhost:3000/pantry_items.json
+Content-Type: application/json
+
+{
+  "ingredient_id": 1,
+  "user_id": 2,
+  "amount": 19
+}
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
