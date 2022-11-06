@@ -18,4 +18,14 @@ Content-Type: application/json
   "password": "password"
 }
 
-jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc4NDExMDB9.OHNp_d2LjKTiAIYZbOTy0zUgVt9Q2xn1964reBaZna4
+### Photos create
+# POST http://localhost:3000/photos.json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc4NDExMDB9.OHNp_d2LjKTiAIYZbOTy0zUgVt9Q2xn1964reBaZna4
+# Content-Type: application/json
+
+# {
+#   "name": "Test name",
+#   "width": 640,
+#   "height": 480
+# }
+
