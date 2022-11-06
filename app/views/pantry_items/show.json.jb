@@ -1,0 +1,5 @@
+{
+  id: @pantry_item.id,
+  created_at: @pantry_item.created_at,
+  updated_at: @pantry_item.updated_at
+}
