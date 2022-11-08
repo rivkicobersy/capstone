@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get "/ingredients" => "ingredients#index"
   post "/ingredients" => "ingredients#create"
+  get "/ingredients/:id" => "ingredients#show"
 
   get "/pantry_items" => "pantry_items#index"
   post "/pantry_items" => "pantry_items#create"

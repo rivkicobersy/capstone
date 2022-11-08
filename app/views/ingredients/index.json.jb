@@ -1,0 +1,7 @@
+@ingredients.map do |ingredient|
+  {
+    id: ingredient.id,
+    name: ingredient.name,
+    image_url: ingredient.image_url,
+  }
+end

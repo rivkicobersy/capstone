@@ -4,6 +4,11 @@ class IngredientsController < ApplicationController
     render json: ingredients.as_json
   end
 
+  def show
+    @ingredient = Ingredient.find_by(id: params[:id])
+    render template: "ingredients/show"
+  end
+
   def create
     ingredient = Ingredient.create(
       name: params[:name],
