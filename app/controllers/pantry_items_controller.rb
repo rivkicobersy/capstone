@@ -1,7 +1,11 @@
 class PantryItemsController < ApplicationController
   def index
-    @pantry_items = current_user.pantry_items
-    render template: "pantry_items/index"
+    if current_user
+      @pantry_items = current_user.pantry_items
+      render template: "pantry_items/index"
+    else
+      render json: []
+    end
   end
 
   def create
