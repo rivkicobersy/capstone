@@ -1,5 +1,5 @@
 ### Search Recipes index
-GET http://localhost:3000/search_recipes.json?q=chocolate
+GET http://localhost:3000/search_recipes.json?q=walnut raisin flour
 
 
 ### Ingredients index
