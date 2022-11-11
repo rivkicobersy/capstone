@@ -17,4 +17,10 @@ class FavRecipesController < ApplicationController
     end
     render json: @fav_recipe.as_json
   end
+
+  def destroy
+    fav_recipe = FavRecipe.find_by(id: params[:id])
+    fav_recipe.destroy
+    render json: { message: "fav recipe destroyed" }
+  end
 end

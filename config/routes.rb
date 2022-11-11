@@ -17,5 +17,6 @@ Rails.application.routes.draw do
 
   get "/search_recipes" => "search_recipes#index"
   post "/fav_recipes" => "fav_recipes#create"
+  delete "/fav_recipes/:id" => "fav_recipes#destroy"
   get "/fav_recipes" => "fav_recipes#index"
 end
