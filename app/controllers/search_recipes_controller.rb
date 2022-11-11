@@ -5,6 +5,6 @@ class SearchRecipesController < ApplicationController
     response = HTTP.get("https://api.edamam.com/api/recipes/v2?type=any&q=#{query}&app_id=#{Rails.application.credentials.food_app_id}&app_key=#{Rails.application.credentials.food_app_api}")
     data = response.parse
     recipes = data["hits"]
-    render json: recipes
+    render json: recipes.map { |recipe| recipe["favourite"] = false; recipe }
   end
 end
