@@ -20,6 +20,14 @@ class PantryItemsController < ApplicationController
     render template: "pantry_items/show"
   end
 
+  def update
+    pantry_item = PantryItem.find_by(id: params[:id])
+    pantry_item.update(
+      amount: params[:amount] || photo.amount,
+    )
+    render json: pantry_item.as_json
+  end
+
   def destroy
     @pantry_item = PantryItem.find_by(id: params[:id])
     @pantry_item.destroy
