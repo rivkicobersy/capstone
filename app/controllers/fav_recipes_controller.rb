@@ -4,6 +4,11 @@ class FavRecipesController < ApplicationController
     render json: fav_recipes.as_json
   end
 
+  def show
+    fav_recipe = FavRecipe.find_by(id: params[:id])
+    render json: fav_recipe.as_json
+  end
+
   def create
     @fav_recipe = FavRecipe.find_by(uri: params[:uri])
     if !@fav_recipe

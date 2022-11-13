@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   delete "/pantry_items/:id" => "pantry_items#destroy"
 
   get "/search_recipes" => "search_recipes#index"
+
   post "/fav_recipes" => "fav_recipes#create"
   delete "/fav_recipes/:id" => "fav_recipes#destroy"
   get "/fav_recipes" => "fav_recipes#index"
+  get "/fav_recipes/:id" => "fav_recipes#show"
 end

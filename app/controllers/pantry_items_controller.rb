@@ -9,7 +9,7 @@ class PantryItemsController < ApplicationController
   end
 
   def create
-    @pantry_item = PantryItem.find_by(ingredient_id: params[:ingredient_id])
+    @pantry_item = current_user.pantry_items.find_by(ingredient_id: params[:ingredient_id])
     if !@pantry_item
       @pantry_item = PantryItem.create(
         ingredient_id: params[:ingredient_id],
