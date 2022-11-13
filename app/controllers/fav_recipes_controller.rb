@@ -18,6 +18,8 @@ class FavRecipesController < ApplicationController
         label: params[:label],
         url: params[:url],
         image: params[:image],
+        ingredientsFood: params[:ingredientsFood],
+        ingredientsImage: params[:ingredientsImage],
       )
     end
     render json: @fav_recipe.as_json

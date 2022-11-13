@@ -20,6 +20,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_11_015250) do
     t.string "image"
     t.string "label"
     t.integer "user_id"
+    t.string "ingredientsFood"
+    t.string "ingredientsImage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

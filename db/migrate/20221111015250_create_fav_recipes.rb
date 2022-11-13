@@ -6,6 +6,8 @@ class CreateFavRecipes < ActiveRecord::Migration[7.0]
       t.string :image
       t.string :label
       t.integer :user_id
+      t.string :ingredientsFood
+      t.string :ingredientsImage
 
       t.timestamps
     end
