@@ -7,7 +7,7 @@ Users can signup and the login or logout. Users can view all the ingredients in 
 I used ruby "3.1.2" and gem "rails", "~> 7.0.4".
 I also implemented a recipe finder API from edemam [edemam API](https://www.edamam.com)
 
-![screenshot](screenshot.png)
+![screenshot](Screenshot.png)
 
 ## Installation
 
