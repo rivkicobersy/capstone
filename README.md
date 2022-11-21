@@ -9,6 +9,12 @@ I started building a react native app as an alternate frontend.
 
 ![screenshot](Screenshot.png)
 
+# Ruby version
+
+ruby "3.1.2"
+
+"rails", "~> 7.0.4"
+
 ## Installation
 
 ```bash
